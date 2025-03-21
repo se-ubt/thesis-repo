@@ -1,0 +1,182 @@
+\documentclass[pdftex,11pt,a4paper]{article}
+
+% language and encoding
+\usepackage[utf8]{inputenc} % set document encoding to UTF-8
+\usepackage[main=english, ngerman]{babel} % adjust language depending on thesis language (affects hyphenation)
+\usepackage[T1]{fontenc} % set font encoding so that special characters are displayed correctly
+
+% fonts
+\usepackage{fourier} % Utopia font (serif)
+\usepackage[scaled=0.95]{helvet} % Helvetica font (sans-serif)
+\usepackage{courier} % Courier Font (typewriter)
+
+% layout
+\usepackage[paper=a4paper, inner=30mm, outer=25mm, top=30mm, bottom=25mm]{geometry}  % set page margins
+\usepackage[parfill]{parskip} % use newlines for paragraphs (more similar to Markdown)
+
+% math formulas
+\usepackage{amsmath}
+\usepackage{amssymb} 
+\usepackage{eucal} % more curly versions for \mathcal{...}
+\usepackage{nicefrac} % nicer fractions
+\usepackage{bm} % bold math symbols
+
+% disable single lines at the start of a paragraph (Schusterjungen)
+\clubpenalty = 10000
+% disable single lines at the end of a paragraph (Hurenkinder)
+\widowpenalty = 10000 \displaywidowpenalty = 10000
+
+% customize links and references
+\usepackage[hyphens]{url} % line breaks in URLs
+\usepackage{hyperref}
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+% formatting
+\usepackage{xspace} % command to control whitespaces 
+\usepackage{csquotes}% environment for quotes
+\newcommand*{\enq}[1]{\enquote{{\itshape#1}}} % use italics font for quotes
+ \usepackage{enumitem} % customize itemize, enumerate, description environments
+ 
+ % references and citations
+\usepackage[numbers, square, comma, sort&compress]{natbib}
+
+% editorial commands
+\newcommand{\todo}[1]{{\textbf{TODO:}\ \textit{#1}}} % command for TODOs
+\newcommand{\comment}[1]{{\textbf{Comment:}\ \textit{#1}}} % command for review comments
+
+% RFC 2119 (https://www.rfc-editor.org/rfc/rfc2119)
+% MUST: absolute requirement
+\newcommand{\must}{\textbf{MUST}\xspace}
+% MUST NOT: absolute prohibition
+\newcommand{\mustnot}{\textbf{MUST NOT}\xspace}
+% SHOULD: there may exist valid reasons in particular circumstances to ignore a  particular item, but the full implications must be understood and carefully weighed before choosing a different course
+\newcommand{\should}{\textbf{SHOULD}\xspace}
+% SHOULD NOT: there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label
+\newcommand{\shouldnot}{\textbf{SHOULD NOT}\xspace}
+% MAY: an item is truly optional
+\newcommand{\may}{\textbf{MAY}\xspace}
+
+
+\begin{document}
+
+\section*{Theis Proposal}
+
+\section{Metadata}
+
+\begin{itemize}[itemsep=-1ex]
+	\item Theis topic: \todo{add working title, can be modified over time}
+	\item Thesis type: \todo{Bachelor or Master}
+	\item Student name: \todo{add student name}
+	\item Student number: \todo{add matriculation number}
+	\item Supervisor(s): \todo{add names of thesis supervisors}
+\end{itemize}
+
+
+\section{Changelog}
+%Your proposal draft usually undergoes iterations in discussion with your supervisor and it makes sense to track the changes over time. A table with versions, dates, and summaries of implemented changes can help document these iterations.
+
+\todo{Optional, only meant for documenting major changes (e.g., changing RQs or milestones).}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Version} & \textbf{Date} & \textbf{Comment} \\ \hline
+ & & \\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{Abstract}
+% Contains a short summary of your thesis based on the other sections mentioned below.
+
+\todo{Add a short summary of your thesis based on the other sections mentioned below.}
+
+
+\section{Introduction}
+% Outlines the context, background, and motivation of your thesis project. You can/should refer to related work here already and discuss it in detail in the dedicated section.
+
+\todo{Add a section that outlines the context, background, and motivation of your thesis project. You can/should refer to related work here already and discuss it in detail in \autoref{sec:related-work}.}
+
+
+\section{Research Question(s)}
+% Based on what you wrote in the introduction section, which high-level question(s) do you intend to answer with your thesis?
+
+\todo{List the high-level question(s) do you intend to answer with your thesis.}
+
+\begin{itemize}[itemsep=-1ex]
+	\item \textbf{RQ1:} ...?
+	\item \textbf{RQ2:} ...?
+	\item \textbf{RQ2:} ...?
+\end{itemize}
+
+
+\section{Related Work}
+\label{sec:related-work}
+% Briefly summarizes the literature review you have conducted while developing your thesis proposal.
+
+\todo{Briefly summarizes the literature review you have conducted while developing your thesis proposal.}
+
+Ober et al. have found that...~\cite{OberOthers2013}
+
+
+\section{Research Methods/Planned Features}
+% Outlines how you attempt to answer your research questions, how you will collect and analyze data, if and how you design experiments, if and how you intend to implement a prototype, how you want to evaluate that prototype, and potentially already verifiable hypothesis for the experiments you plan. For prototype implementations, this section can also list potential features of the prototype.
+
+\todo{In case of an empirical topic, outline the research methods here.}
+
+\todo{In case of an implementation-focused topic, outline the planned features here. Note that implementations are usually accompanied by a user study, so this is not meant as an XOR.}
+
+
+\section{Scope}
+% Define the criteria that your thesis must fulfill to be successful. You can additionally outline optional criteria or explicitly define aspects to be out of scope.
+
+\todo{List the \must criteria for your thesis, the \may and \mustnot criteria are optional.}
+
+This thesis \must...
+
+\begin{itemize}[itemsep=-1ex]
+	\item ...
+\end{itemize}
+
+This thesis \may...
+
+\begin{itemize}[itemsep=-1ex]
+	\item ...
+\end{itemize}
+
+This thesis \mustnot...
+
+\begin{itemize}[itemsep=-1ex]
+	\item ...
+\end{itemize}
+
+
+\section{Roadmap}
+% Outlines when you want to reach which milestones in your thesis project, including dates, deliverables, success criteria for the milestones together with potential risks and how you intend to mitigate or react to them. Make sure to consider enough time for writing up your thesis after implementation, data collection, experiments, etc. are finished. You can create a Gantt chart (https://en.wikipedia.org/wiki/Gantt_chart) to visualize the overall plan of your thesis project GanttProject (https://www.ganttproject.biz/) is one potential tool for that.
+
+\todo{Outlines when you want to reach which milestones in your thesis project.}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Milestone} & \textbf{Date} & \textbf{Deliverable(s)} & \textbf{Success Criteria} & \textbf{Risks} & \textbf{Mitigation/Alternatives} \\ \hline
+& & & & & \\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{References}
+% Lists all references used in your thesis proposal.
+
+\begingroup
+% disable heading "References" for Markdown conversion
+\renewcommand{\section}[2]{}%
+\bibliographystyle{plainnat}
+\bibliography{literature}
+\endgroup
+
+\end{document}
