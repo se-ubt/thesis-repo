@@ -2,9 +2,9 @@
 
 # Metadata
 
--   Theis topic: **TODO:** *add working title*
+-   Thesis topic: **TODO:** *add working title*
 
--   Thesis type: **TODO:** *Bachelor or Master*
+-   Thesis type: **TODO:** *add thesis type (bachelor or master)*
 
 -   Student name: **TODO:** *add student name*
 
