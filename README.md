@@ -2,9 +2,10 @@
 
 # Metadata
 
--   Theis topic: **TODO:** *add working title*
+-   Thesis topic: **TODO:** *add working title, can be modified over
+    time*
 
--   Thesis type: **TODO:** *Bachelor or Master*
+-   Thesis type: **TODO:** *add thesis type (bachelor or master)*
 
 -   Student name: **TODO:** *add student name*
 
@@ -36,27 +37,34 @@ changing RQs or milestones).*
 
 # Abstract
 
-**TODO:** *Short summary of your thesis based on the other sections
-mentioned below.*
+**TODO:** *Add a short summary of your thesis based on the other
+sections mentioned below.*
 
 # Introduction
 
-**TODO:** *Outlines the context, background, and motivation of your
-thesis project. You can/should refer to related work here already and
-discuss it in detail in
+**TODO:** *Add a section that outlines the context, background, and
+motivation of your thesis project. You can/should refer to related work
+here already and discuss it in detail in
 <a href="#sec:related-work" data-reference-type="ref+label"
-data-reference="sec:related-work">8</a>.*
+data-reference="sec:related-work">6</a>.*
 
 # Research Question(s)
 
-**TODO:** *Based on what you wrote in the introduction section, which
-high-level question(s) do you intend to answer with your thesis?*
+**TODO:** *List the high-level question(s) do you intend to answer with
+your thesis.*
 
 -   **RQ1:** ...?
 
 -   **RQ2:** ...?
 
 -   **RQ2:** ...?
+
+# Related Work
+
+**TODO:** *Briefly summarizes the literature review you have conducted
+while developing your thesis proposal.*
+
+Ober et al. have found that... \[1\]
 
 # Research Methods/Planned Features
 
@@ -66,6 +74,23 @@ here.*
 **TODO:** *In case of an implementation-focused topic, outline the
 planned features here. Note that implementations are usually accompanied
 by a user study, so this is not meant as an XOR.*
+
+# Scope
+
+**TODO:** *List the **MUST** criteria for your thesis, the **MAY** and
+**MUST NOT** criteria are optional.*
+
+This thesis **MUST**...
+
+-   ...
+
+This thesis **MAY**...
+
+-   ...
+
+This thesis **MUST NOT**...
+
+-   ...
 
 # Roadmap
 
@@ -95,30 +120,6 @@ style="text-align: left;"><strong>Mitigation/Alternatives</strong></th>
 </tr>
 </tbody>
 </table>
-
-# Related Work
-
-**TODO:** *Briefly summarizes the literature review you have conducted
-while developing your thesis proposal.*
-
-Ober et al. have found that... \[1\]
-
-# Scope
-
-**TODO:** *The **MUST** criteria are most important, the **MAY** and
-**MUST NOT** criteria are optional.*
-
-This thesis **MUST**...
-
--   ...
-
-This thesis **MAY**...
-
--   ...
-
-This thesis **MUST NOT**...
-
--   ...
 
 # References
 
