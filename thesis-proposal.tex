@@ -32,6 +32,12 @@
 \renewcommand{\sectionautorefname}{Section}
 \renewcommand{\subsectionautorefname}{Section}
 \renewcommand{\subsubsectionautorefname}{Section}
+% babel overrides the labels...
+\addto\extrasenglish{%
+  \renewcommand{\sectionautorefname}{Section}
+  \renewcommand{\subsectionautorefname}{Section}
+  \renewcommand{\subsubsectionautorefname}{Section}
+}
 
 % formatting
 \usepackage{xspace} % command to control whitespaces 
